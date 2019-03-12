@@ -60,11 +60,15 @@ def handle_close(evt):
 
 def chat_control():
     global graph_check
+    
+    time.sleep(2)
+    os.system('clear')
     print('--------------------------------------------------')
-    print('Temp graph: To show Real-time Temperature Graph')
+    print('Enter "Temp graph" To show Real-time Temperature Graph')
+    print('Enter "Temp" to show last published temp')
     print('--------------------------------------------------')
     while True:
-        need = input('Temp: ').strip()
+        need = input('Client: ').strip()
         if need.lower() == 'temp graph':
             while True:
                 if graph_check == 1:
