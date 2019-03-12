@@ -62,5 +62,5 @@ while True:
     try:
         main()
     except KeyboardInterrupt:
-        print('Programme terminated')
+        print('\nProgramme terminated')
         break
