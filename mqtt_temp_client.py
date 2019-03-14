@@ -9,10 +9,10 @@ print('-----------------------------------')
 print('Welcome to MQTT Subscriber client')
 print('-----------------------------------')
 
-username = 'kcqjsmsf'
-password = 'z2AmYboRBXTk'
-broker_ip = 'm24.cloudmqtt.com'
-broker_port_no = 16966
+username = input('Username of Broker: ').strip()
+password = input('Password of Broker: ').strip()
+broker_ip = input("Broker's IP: ").strip()
+broker_port_no = int(input("Broker's Port no: ").strip())
 topic = input("Topic: ").strip()
 print('-----------------------------------')
 
